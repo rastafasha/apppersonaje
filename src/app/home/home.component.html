@@ -6,12 +6,24 @@
                 <h3 class="btn btn-outline-info"> {{'Normal'}}</h3>
             </a>
         </li>
-        <!-- <li>
+        <li>
             <a href="#" onclick="return false;" [ngClass]="{'active': option_selectedd == 2}"
                 (click)="optionSelected(2)">
                 <h3 class="btn btn-outline-info">{{'saludando'}}</h3>
             </a>
-        </li> -->
+        </li>
+        <li>
+            <a href="#" onclick="return false;" [ngClass]="{'active': option_selectedd == 3}"
+                (click)="optionSelected(3)">
+                <h3 class="btn btn-outline-info">{{'interactuando'}}</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="return false;" [ngClass]="{'active': option_selectedd == 4}"
+                (click)="optionSelected(4)">
+                <h3 class="btn btn-outline-info">{{'apuntando'}}</h3>
+            </a>
+        </li>
 
 
     </ul>
@@ -21,5 +33,18 @@
         <ng-lottie [options]="options"></ng-lottie>
     </div>
 </div>
-<div *ngIf="option_selectedd == 1"></div>
-<div *ngIf="option_selectedd == 1"></div>
+<div *ngIf="option_selectedd == 2">
+    <div style="width: 300px; margin: 0 auto;">
+        <ng-lottie [options]="option2"></ng-lottie>
+    </div>
+</div>
+<div *ngIf="option_selectedd == 3">
+    <div style="width: 300px; margin: 0 auto; cursor: pointer;">
+        <ng-lottie [options]="options" (click)="cambiarASaludo()"></ng-lottie>
+    </div>
+</div>
+<div *ngIf="option_selectedd == 4">
+    <div style="width: 300px; margin: 0 auto; cursor: pointer;">
+        <ng-lottie [options]="option3"></ng-lottie>
+    </div>
+</div>
