@@ -1,0 +1,25 @@
+<div class="tab-content-set">
+    <ul class="nav">
+        <li>
+            <a href="#" onclick="return false;" [ngClass]="{'active': option_selectedd == 1}"
+                (click)="optionSelected(1)">
+                <h3 class="btn btn-outline-info"> {{'Normal'}}</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="return false;" [ngClass]="{'active': option_selectedd == 2}"
+                (click)="optionSelected(2)">
+                <h3 class="btn btn-outline-info">{{'saludando'}}</h3>
+            </a>
+        </li>
+
+
+    </ul>
+</div>
+<div *ngIf="option_selectedd == 1">
+    <div style="width: 300px; margin: 0 auto;">
+        <ng-lottie [options]="options"></ng-lottie>
+    </div>
+</div>
+<div *ngIf="option_selectedd == 1"></div>
+<div *ngIf="option_selectedd == 1"></div>
