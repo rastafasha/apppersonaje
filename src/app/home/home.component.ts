@@ -15,7 +15,7 @@ export class HomeComponent {
     solicitud_selectedd: any = 1;
 
   options: AnimationOptions = {
-    path: 'https://lottie.host/148f124a-b35f-445c-9548-1dba636cdc51/7GusgeqAfi.json', // Asegúrate de que el nombre coincida
+    path: 'https://lottie.host/5787ec7f-8813-48cf-9c7d-5baf944504c8/nhz0cdLQVX.json', // Asegúrate de que el nombre coincida
   };
 
    optionSelected(value: number) {
