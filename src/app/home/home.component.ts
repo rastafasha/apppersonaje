@@ -1,12 +1,13 @@
-import { CommonModule, NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { LottieComponent, AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-home',
-  imports: [LottieComponent, NgClass, CommonModule],
+  imports: [CommonModule, LottieComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  standalone: true
 })
 export class HomeComponent {
 
